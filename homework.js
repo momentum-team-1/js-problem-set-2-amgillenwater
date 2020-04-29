@@ -42,7 +42,12 @@ function sum(arrays) {
 // and returns the average of those numbers.
 
 function average(arrays){
-    return arrays.reduce((a,b) => (a + b)) / arrays.length;
+    let final = sum(arrays)
+    if (final ==== 0) {
+        return 
+    }
+    return (final/arrays.length)
+
 }
 
 // 5. Create a function called "minimum" that takes an array of numbers and

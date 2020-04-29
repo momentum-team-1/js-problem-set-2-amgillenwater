@@ -61,9 +61,9 @@ describe('sum', function () {
 })
 
 describe('average', function () {
-  // it('returns undefined for an empty array', function () {
-  //   assert.isUndefined(average([]))
-  // })
+  it('returns undefined for an empty array', function () {
+    assert.isUndefined(average([]))
+  })
 
   it('works with only one number in the array', function () {
     assert.equal(5, average([5]))
