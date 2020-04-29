@@ -42,13 +42,13 @@ function sum(arrays) {
 // and returns the average of those numbers.
 
 function average(arrays){
-    let final = sum(arrays)
-    if (final ==== 0) {
-        return 
-    }
-    return (final/arrays.length)
-
+//take the average and divide by the arrays.length
+//make an if/else statement or something that will throw out any empty arrays since you can't divide by zero OR will only run if an array is NOT empty
+if (arrays.length !== 0){
+    return (average(arrays)/arrays.length)
 }
+}
+
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
