@@ -2,21 +2,57 @@
 // member of the array, and returns a new array with that member removed.
 // For example, `remove(['Cadence', 'Ordel', 'Marion'], 'Marion')` results
 // in `['Cadence', 'Ordel']`.
-//
+
+// function remove(array, member){
+//     for (let name of array){
+//         if (name === member){
+//             array.push(member)
+//         }
+//     }
+//     return array;
+// } 
+
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
 
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
+function remove(array, member){
+    let newArray = [];
+    for (let name of array){
+        if (name !== member){
+            newArray.push(name)
+        }
+    }
+    return newArray;
+} 
+
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
+function sum(arrays) {
+    let final = 0;
+    for (let number of arrays){
+        final += number
+    }
+    return final
+}
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
+function average(arrays){
+//take the average and divide by the arrays.length
+//make an if/else statement or something that will throw out any empty arrays since you can't divide by zero OR will only run if an array is NOT empty
+if (arrays.length !== 0){
+    return (average(arrays)/arrays.length)
+}
+}
+
+
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
